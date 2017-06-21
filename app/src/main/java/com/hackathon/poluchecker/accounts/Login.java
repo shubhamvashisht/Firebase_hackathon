@@ -72,6 +72,7 @@ import com.google.gson.Gson;
 import com.hackathon.poluchecker.Constants;
 import com.hackathon.poluchecker.GenericUser;
 import com.hackathon.poluchecker.Home;
+import com.hackathon.poluchecker.MainActivity;
 import com.hackathon.poluchecker.R;
 import com.hackathon.poluchecker.utils.ValidateUserInfo;
 import com.hackathon.poluchecker.utl;
@@ -150,7 +151,7 @@ public class Login extends AppCompatActivity {
         utl.setShared(this);
         if(utl.readData(this)!=null)
         {
-            startActivity(new Intent(this,Home.class));
+            startActivity(new Intent(this,MainActivity.class));
             finish();
         }
        // utl.SlideUP(logins,ctx);
@@ -658,7 +659,7 @@ public class Login extends AppCompatActivity {
                             showDig(false);
 
                             utl.log("ALREADY PRESENT "+postSnapshot.getValue());
-                            Intent iz=new Intent(Login.this, Home.class);
+                            Intent iz=new Intent(Login.this, MainActivity.class);
                             iz.putExtra("email",postSnapshot.getKey());
                             if(
                                     utl.writeData(user,ctx)){
