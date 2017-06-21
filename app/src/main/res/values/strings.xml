@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Poluchecker</string>
+    <string name="app_name">DCom</string>
+    <string name="facebook_app_id">1783311218580104</string>
+    <string name="fb_login_protocol_scheme">fb1783311218580104</string>
 </resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical"
+    android:id="@+id/search_layout"
+    android:background="@android:color/white"
+    android:paddingLeft="13.0dip"
+    android:paddingTop="9.0dip"
+    android:paddingRight="13.0dip"
+    android:paddingBottom="9.0dip"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <EditText
+        android:textSize="12.0sp"
+        android:textColor="@color/text_data_color"
+        android:textColorHint="@color/text_data_color"
+        android:gravity="start|center"
+        android:id="@+id/search_et"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="13.0dip"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        android:drawableLeft="@android:drawable/ic_menu_edit"
+        android:drawablePadding="10dp"   />
+</RelativeLayout>
