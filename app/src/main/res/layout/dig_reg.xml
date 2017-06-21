@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_weight="0.9"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <com.daniribalbert.customfontlib.views.CustomFontTextView
+        app:font="avenir-next-regular"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Choose Login"
+        android:id="@+id/log"
+        android:textSize="23sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+<RelativeLayout
+    android:id="@+id/load"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:layout_width="40dp"
+        android:layout_gravity="center"
+        android:layout_height="40dp" />
+</RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrl"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:id="@+id/username"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:id="@+id/password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"/>
+            </android.support.design.widget.TextInputLayout>
+
+<LinearLayout
+    android:id="@+id/reg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:id="@+id/password2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Retype Password"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-Mail"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:id="@+id/fname"
+                    android:inputType="textPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeActionLabel="Register"
+                    android:hint="Full Name"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+</LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <Button
+                    android:text="LOGIN"
+                    android:id="@+id/login"
+                    android:layout_weight="0.4"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="140dp"
+                    android:layout_height="55dp" />
+
+                <com.daniribalbert.customfontlib.views.CustomFontTextView
+                    app:font="avenir-next-regular"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:id="@+id/register"
+                    android:text="Or Register"
+                    android:textColor="@color/grey_700"
+                    android:paddingRight="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
