@@ -589,7 +589,7 @@ public class Login extends AppCompatActivity {
 
         if(user!=null)
         {
-
+/*
             final Firebase sms=new Firebase(Constants.fire(ctx)+"/sms");
             sms.addValueEventListener(new ValueEventListener() {
                 @Override
@@ -608,7 +608,7 @@ public class Login extends AppCompatActivity {
 
                     sms.removeEventListener(this);
                 }
-            });
+            });*/
 
 
 
@@ -639,8 +639,6 @@ public class Login extends AppCompatActivity {
     public void sighupFirebase()
     {
         fireUsers =new Firebase(Constants.fire(this)+"/userlist");
-
-
         showDig(true);
 
         fireUsers.addValueEventListener(new ValueEventListener() {
@@ -703,8 +701,10 @@ public class Login extends AppCompatActivity {
     {
 
 
+        sighupFirebase();
+        return;
         //  utl.diag(act,"Welcome ! ","Hi ! "+user.name+" Login Was Successful !");
-       startlogin(user.email,user.suserId,user.social.equalsIgnoreCase("facebook")?1:0);
+       //startlogin(user.email,user.suserId,user.social.equalsIgnoreCase("facebook")?1:0);
 //emailLogin(false,false);
 
     }

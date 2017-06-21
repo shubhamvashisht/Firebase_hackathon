@@ -36,7 +36,7 @@ public class Constants {
     public static final String TAG_LOGIN = "login";
     public static  String folder = "login";
     public static  String datafile = "login";
-    private static String FIRE_BASE="https://genricapp.firebaseio.com/";
+    private static String FIRE_BASE="https://test-a0930.firebaseio.com/";
     public static String fire(Context ctx)
     {
         return Constants.FIRE_BASE+ utl.refineString(ctx.getResources().getString(R.string.app_name),"");
